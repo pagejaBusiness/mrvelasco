@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <h3>seu site aqui</h3>
+      <h3>seu site aqui2</h3>
     </div>
   );
 }
