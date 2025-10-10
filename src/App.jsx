@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <h3>seu site aqui2</h3>
+      <h3 className="mt-[3000px]">seu site aqui2</h3>
     </div>
   );
 }
