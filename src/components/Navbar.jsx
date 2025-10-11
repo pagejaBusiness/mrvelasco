@@ -98,7 +98,7 @@ function Navbar() {
             {/* Logo */}
             <div className="relative group">
               <img
-                src="https://res.cloudinary.com/pageja/image/upload/v1760123630/L_douglas_-_BASICO_ufbcuv.png"
+                src="https://res.cloudinary.com/pageja/image/upload/v1760137714/L_douglas_-_BASICO_ufbcuv2_ngmqgi.svg"
                 alt="Logo Mauro Barros"
                 className="h-12 sm:h-14 md:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
