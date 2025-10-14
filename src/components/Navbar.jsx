@@ -153,48 +153,48 @@ function Navbar() {
         </div>
       </nav>
 
-      {/* Menu Mobile */}
-      {(isMenuOpen || isClosing) && (
-        <div
-          className={`md:hidden fixed inset-0 z-40 transition-opacity duration-300 ${
-            isClosing ? "opacity-0" : "opacity-100"
-          }`}
-          onClick={closeMenu}
-        >
-          <div className="absolute inset-0 bg-barbershopDark/95 backdrop-blur-lg transition-opacity duration-300"></div>
+      {/* Menu Mobile (sempre montado para permitir animação suave) */}
+      <div
+        className={`md:hidden fixed inset-0 z-40 transition-opacity duration-500 ease-out ${
+          isMenuOpen
+            ? "pointer-events-auto opacity-100"
+            : "pointer-events-none opacity-0"
+        }`}
+        onClick={closeMenu}
+      >
+        {/* Fundo escurecido */}
+        <div className="absolute inset-0 bg-barbershopDark/70 backdrop-blur-md transition-opacity duration-500 ease-out"></div>
 
-          <div
-            className={`absolute top-0 right-0 h-full w-80 max-w-[85vw] bg-barbershopDark/100 backdrop-blur-xl shadow-2xl transition-transform duration-[420ms] ${
-              isClosing ? "translate-x-full" : "translate-x-0"
-            }`}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex flex-col h-full pt-24 pb-8 px-6 gap-3">
-              {navItems.map((item) => {
-                const isActive = activeSection === item.href.replace("#", "");
-                return (
-                  <button
-                    key={item.name}
-                    onClick={() => {
-                      scrollToSection(item.href);
-                      closeMenu();
-                    }}
-                    className={`relative text-left py-4 px-5 font-semibold text-lg tracking-wide transition-all duration-300 rounded-lg group ${
-                      isActive
-                        ? "text-barbershopAccent bg-barbershopDark/80"
-                        : "text-barbershopLight/90 hover:text-barbershopAccent hover:bg-barbershopDark/70"
-                    }`}
-                  >
-                    <span className="relative z-10 block pl-3">
-                      {item.name}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
+        {/* Sidebar deslizante */}
+        <div
+          className={`absolute top-0 right-0 h-full w-80 max-w-[85vw] bg-barbershopDark/100 backdrop-blur-xl shadow-2xl transform transition-transform duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="flex flex-col h-full pt-24 pb-8 px-6 gap-3">
+            {navItems.map((item) => {
+              const isActive = activeSection === item.href.replace("#", "");
+              return (
+                <button
+                  key={item.name}
+                  onClick={() => {
+                    scrollToSection(item.href);
+                    closeMenu();
+                  }}
+                  className={`relative text-left py-4 px-5 font-semibold text-lg tracking-wide transition-all duration-300 rounded-lg group ${
+                    isActive
+                      ? "text-barbershopAccent bg-barbershopDark/80"
+                      : "text-barbershopLight/90 hover:text-barbershopAccent hover:bg-barbershopDark/70"
+                  }`}
+                >
+                  <span className="relative z-10 block pl-3">{item.name}</span>
+                </button>
+              );
+            })}
           </div>
         </div>
-      )}
+      </div>
     </>
   );
 }
