@@ -1,14 +1,17 @@
 import "./App.css";
 import Herosection from "./components/Herosection.jsx";
 import Navbar from "./components/Navbar.jsx";
+import About from "./components/About.jsx";
 
 function App() {
   return (
     <div>
       <Navbar />
-
-      <section>
+      <section id="home">
         <Herosection />
+      </section>
+      <section id="about">
+        <About />
       </section>
     </div>
   );

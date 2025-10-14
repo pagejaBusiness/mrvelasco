@@ -19,8 +19,10 @@ function Navbar() {
 
   const scrollToSection = (id) => {
     const section = document.querySelector(id);
+    const navbarHeight = document.querySelector("nav").offsetHeight; 
     if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      const top = section.offsetTop - navbarHeight; 
+      window.scrollTo({ top, behavior: "smooth" });
       setActiveSection(id.replace("#", ""));
     }
   };
@@ -60,10 +62,8 @@ function Navbar() {
     if (isClosing) return;
     setIsClosing(true);
 
-    // volta o ícone imediatamente
     setIsMenuOpen(false);
 
-    // aguarda o fechamento suave da sidebar
     closingTimerRef.current = setTimeout(() => {
       setIsClosing(false);
       closingTimerRef.current = null;
@@ -153,7 +153,7 @@ function Navbar() {
         </div>
       </nav>
 
-      {/* Menu Mobile (sempre montado para permitir animação suave) */}
+      {/* Menu Mobile */}
       <div
         className={`md:hidden fixed inset-0 z-40 transition-opacity duration-500 ease-out ${
           isMenuOpen
