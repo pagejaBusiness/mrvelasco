@@ -84,17 +84,19 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="relative"
+            className="relative w-full"
           >
             <div className="relative overflow-hidden rounded-lg shadow-2xl">
               {/* Efeito de borda neon */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#00ff70]/20 to-transparent rounded-lg"></div>
 
-              <img
-                src="https://res.cloudinary.com/pageja/image/upload/v1760404378/IMG_1829_dypurr.jpg"
-                alt="Douglas Velasco - Barbeiro profissional"
-                className="w-full h-[420px] sm:h-[480px] md:h-[520px] lg:h-[600px] object-cover object-center rounded-lg transform hover:scale-105 transition-transform duration-700 ease-out"
-              />
+              <div className="w-full aspect-[4/5] md:aspect-[3/4] lg:aspect-[4/5]">
+                <img
+                  src="https://res.cloudinary.com/pageja/image/upload/v1760404378/IMG_1829_dypurr.jpg"
+                  alt="Douglas Velasco - Barbeiro profissional"
+                  className="w-full h-full object-cover object-center rounded-lg transform hover:scale-105 transition-transform duration-700 ease-out"
+                />
+              </div>
 
               {/* Detalhes decorativos */}
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#03903c] rounded-lg -z-10"></div>
