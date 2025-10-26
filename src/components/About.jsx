@@ -92,7 +92,7 @@ export default function About() {
 
               <div className="w-full aspect-[4/5] md:aspect-[3/4] lg:aspect-[4/5]">
                 <img
-                  src="https://res.cloudinary.com/pageja/image/upload/v1760572483/about_douglas_rv75f7.jpg"
+                  src="https://res.cloudinary.com/pageja/image/upload/v1760404378/IMG_1829_dypurr.jpg"
                   alt="Douglas Velasco - Barbeiro profissional"
                   className="w-full h-full object-cover object-center rounded-lg transform hover:scale-105 transition-transform duration-700 ease-out"
                 />
