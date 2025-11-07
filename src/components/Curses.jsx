@@ -12,23 +12,23 @@ function Curses() {
 
   const courses = {
     advanced: {
-      title: "Curso Avançado de Corte",
-      subtitle: "Aprimore suas Habilidades",
+      title: "Curso Douglas Velasco 2.0",
+      subtitle: "Aprimore Suas Técnicas e Entregue Resultados de Alto Padrão",
       description:
-        "Perfeito para barbeiros experientes que desejam dominar técnicas avançadas.",
+        "Treinamento completo voltado para barbeiros experientes que desejam aperfeiçoar suas técnicas e elevar o nível do atendimento.",
       images: [
-        "https://res.cloudinary.com/pageja/image/upload/v1760575513/about_douglas_rv75f7.png",
-        "https://res.cloudinary.com/pageja/image/upload/v1760404378/IMG_1829_dypurr.jpg",
-        "https://res.cloudinary.com/pageja/image/upload/v1760137714/L_douglas_-_BASICO_ufbcuv2_ngmqgi.svg",
+        "https://res.cloudinary.com/pageja/image/upload/v1762483911/basico06_hf7hpo.jpg",
+        "https://res.cloudinary.com/pageja/image/upload/v1762483911/basico04_zdnnti.jpg",
+        "https://res.cloudinary.com/pageja/image/upload/v1762483924/basico07_jto6jd.jpg",
       ],
       fullDescription:
-        "Leve suas habilidades de barbearia para o próximo nível com o nosso Curso Avançado de Corte. Este programa cobre técnicas de fade avançadas, cortes de precisão, tendências modernas e estratégias de crescimento. Aprenda com especialistas do setor com mais de 15 anos de experiência. Inclui prática presencial, certificado e acesso vitalício à comunidade exclusiva.",
+        "O Curso Douglas Velasco 2.0 é um treinamento prático e completo, criado para barbeiros que já atuam na área e desejam evoluir. São 8 aulas intensivas voltadas para aperfeiçoar suas técnicas, corrigir pontos de dificuldade e entregar resultados mais precisos e valorizados. Aprenda procedimentos como barbaterapia, degradê em três tons, pigmentação e design de sobrancelhas — tudo com foco em elevar o padrão do seu atendimento e destacar seu trabalho no mercado.",
       highlights: [
-        "Técnicas avançadas de fade e degradê",
-        "Trabalho de tesoura com precisão",
-        "Tendências modernas de estilo",
-        "Estratégias de negócio e marketing",
-        "Certificado ao concluir o curso",
+        "8 aulas práticas com foco em evolução profissional",
+        "Técnicas de barbaterapia e cuidados avançados",
+        "Degradê em três tons e pigmentação precisa",
+        "Design de sobrancelhas e acabamento detalhado",
+        "Voltado para barbeiros que desejam subir de nível e conquistar novos clientes",
       ],
     },
     basic: {
@@ -37,9 +37,9 @@ function Curses() {
       description:
         "Ideal para iniciantes que desejam aprender os fundamentos da barbearia.",
       images: [
-        "https://res.cloudinary.com/pageja/image/upload/v1760137665/L_douglas_-_BASICO_ufbcuv_ko3zqv.svg",
-        "https://res.cloudinary.com/pageja/image/upload/v1760134049/Close-up_de_um_barbe_kiv335.png",
-        "https://res.cloudinary.com/pageja/image/upload/v1760123630/L_douglas_-_BASICO_ufbcuv.png",
+        "https://res.cloudinary.com/pageja/image/upload/v1762483925/basico03_xaakif.jpg",
+        "https://res.cloudinary.com/pageja/image/upload/v1762484838/IMG_2073_1_nxkutz.jpg",
+        "https://res.cloudinary.com/pageja/image/upload/v1762483913/basico01_rdwyn6.jpg",
       ],
       fullDescription:
         "Inicie sua carreira na barbearia com o nosso Curso Básico de Corte. Aprenda técnicas essenciais de corte, manuseio de ferramentas, atendimento ao cliente e protocolos de segurança. Nosso método passo a passo garante que você construa uma base sólida, mesmo sem experiência prévia.",
